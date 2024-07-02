@@ -1,0 +1,14 @@
+python train.py --name=03-06-2024 \
+                --gpu_ids=0 \
+                --batch_size=32 \
+                --num_threads=8 \
+                --preprocess=shift_scale_rot_flip \
+                --use_aug=True \
+                --batch_size_val=32 \
+                --display_freq=1000 \
+                --print_freq=100 \
+                --save_latest_freq=5000 \
+                --save_epoch_freq=1 \
+                --evaluation_freq=5000 \
+                --n_epochs=20 \
+                --lr=0.0001 \
